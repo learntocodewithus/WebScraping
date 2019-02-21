@@ -3,7 +3,8 @@ from selenium import webdriver
 from selenium.webdriver import Chrome
 #NEW AMAZON SCRIPT
 
-asin_list = ['B07FPRZ69X','B06XCM9LJ4','B079QHML21']
+
+asin_list = ['B07FPRZ69X','B06XCM9LJ4','B079QHML21','B07578N1F4']
 chromedriver = '/Users/mclaren/Downloads/CodingFor/chromedriver'
 driver = Chrome(chromedriver)
 
@@ -31,11 +32,21 @@ for product in asin_list:
 		price = price.text
 	except:
 		pass
+	# print(price)
 	bullets = driver.find_element_by_id("feature-bullets")
 	bullets = bullets.text
 	bulletsList = bullets.split("\n")
 	bulletsList = [i for i in bulletsList]
+	# sleep 5 
+	# print(bulletsList)
 	csvRow.extend((p_element,price))
 	csvRow.extend(bulletsList)
 	print(csvRow)
 	writer.writerow(csvRow)
+driver.close()
+
+
+
+
+
+

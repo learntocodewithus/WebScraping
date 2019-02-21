@@ -1,5 +1,15 @@
 Web scraping resources
 
+Selenium
+```
+https://selenium-python.readthedocs.io
+```
+
+Web Driver for Chrome
+```
+http://chromedriver.chromium.org/downloads
+```
+
 
 Beautiful Soup Documentation
 ```
