@@ -3,10 +3,6 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.common.keys import Keys
 import time
  
- 
-
-
-
 	
 url = "https://www3.hilton.com/en/index.html"
 chromedriver = '/Users/mclaren/Downloads/CodingFor/chromedriver'
@@ -19,8 +15,8 @@ checkin = driver.find_element_by_id("checkin")
 checkout = driver.find_element_by_id("checkout")
 checkin.clear()
 checkout.clear()
-checkin.send_keys("03 Mar 2019")
-checkout.send_keys("10 Mar 2019")
+checkin.send_keys("12 Mar 2019")
+checkout.send_keys("20 Mar 2019")
 checkin.send_keys(Keys.ENTER)
 checkout.send_keys(Keys.ENTER)
 form.send_keys("Miami")
