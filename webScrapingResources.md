@@ -4,6 +4,8 @@ Selenium
 
 [https://selenium-python.readthedocs.io](https://selenium-python.readthedocs.io)
 
+[Locating Elements](https://selenium-python.readthedocs.io/locating-elements.html)
+
 Web Driver for Chrome
 
 [http://chromedriver.chromium.org/downloads](http://chromedriver.chromium.org/downloads)
